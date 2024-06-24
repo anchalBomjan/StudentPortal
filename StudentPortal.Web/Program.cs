@@ -9,8 +9,6 @@ builder.Services.AddControllersWithViews();
 // To inject DbContext in this application  we have to  defined in the service conteainer
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("StudentPortal")));
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. 
